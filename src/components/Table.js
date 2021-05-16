@@ -10,6 +10,7 @@ const Table = () => {
   };
 
   useEffect(() => {
+    document.title = "Covid-19 Dashboard";
     getCovidData();
   }, []);
   return (
