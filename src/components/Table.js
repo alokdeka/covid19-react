@@ -14,7 +14,7 @@ const Table = () => {
   }, []);
   return (
     <div>
-      <div className="container">
+      <div className="container mb-5">
         <div className="table-responsive shadow rounded">
           <table className="table table-bordered table-hover table-striped">
             <thead>
@@ -31,12 +31,12 @@ const Table = () => {
               {data.map((curElem, i) => {
                 return (
                   <tr key={i}>
-                    <td>{curElem.state}</td>
-                    <td>{curElem.confirmed}</td>
-                    <td>{curElem.recovered}</td>
-                    <td>{curElem.deaths}</td>
-                    <td>{curElem.active}</td>
-                    <td>{curElem.lastupdatedtime}</td>
+                    <td className="green">{curElem.state}</td>
+                    <td className="green">{curElem.confirmed}</td>
+                    <td className="green">{curElem.recovered}</td>
+                    <td className="deaths">{curElem.deaths}</td>
+                    <td className="green">{curElem.active}</td>
+                    <td className="green">{curElem.lastupdatedtime}</td>
                   </tr>
                 );
               })}

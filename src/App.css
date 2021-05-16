@@ -1,3 +1,9 @@
-.App {
-  text-align: center;
+.deaths:hover{
+  background: red;
+  color: #fff;
+}
+
+.green:hover{
+  background: green;
+  color: #fff;
 }
